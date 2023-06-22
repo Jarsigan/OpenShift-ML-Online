@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook
+FROM registry.access.redhat.com/ubi8/python-38:latest
 
 RUN mkdir my-model
 ENV MODEL_DIR=./my-model
