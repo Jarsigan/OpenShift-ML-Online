@@ -2,23 +2,23 @@
 # api.py
 # Xavier Vasques 03/06/2021
 
-import os
-from sklearn import svm
-from joblib import dump, load
-from sklearn.model_selection import train_test_split
-from sklearn.datasets import load_iris
-from joblib import load
+# import os
+# from sklearn import svm
+# from joblib import dump, load
+# from sklearn.model_selection import train_test_split
+# from sklearn.datasets import load_iris
+# from joblib import load
 
 from flask import Flask
 
 # Set environnment variables
-MODEL_DIR = os.environ["MODEL_DIR"]
-MODEL_FILE = os.environ["MODEL_FILE"]
-MODEL_PATH = os.path.join(MODEL_DIR, MODEL_FILE)
-
-# Loading model
-print("Loading model from: {}".format(MODEL_PATH))
-inference = load(MODEL_PATH)
+# MODEL_DIR = os.environ["MODEL_DIR"]
+# MODEL_FILE = os.environ["MODEL_FILE"]
+# MODEL_PATH = os.path.join(MODEL_DIR, MODEL_FILE)
+#
+# # Loading model
+# print("Loading model from: {}".format(MODEL_PATH))
+# inference = load(MODEL_PATH)
 
 # Creation of the Flask app
 app = Flask(__name__)
